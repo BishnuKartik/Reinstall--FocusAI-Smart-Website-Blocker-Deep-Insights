@@ -548,7 +548,7 @@ body{
       <div class="tb-icon"><img src="logo.png" height="50" width="50"></div>
       <div>
         <div class="tb-name">FocusAI: Smart Website Blocker & Deep Insights</div>
-        <div class="tb-ver">v2.0.0 · 100% Offline</div>
+        <div class="tb-ver">v2.0.0 · Privacy-First</div>
       </div>
     </a>
     <div class="tb-status">
@@ -573,9 +573,8 @@ body{
     </h1>
 
     <p class="hero-sub">
-      You had complete control of your digital focus —
-      all without giving up a single byte of your privacy.
-      We hope you found what you needed.
+      You had complete control of your digital focus.
+      We hope you found what you needed, and that your time was well protected.
       You're always welcome back.
     </p>
 
@@ -618,7 +617,7 @@ body{
     <div class="fb-row">
       <div class="privacy-note">
         <span class="lock-badge">🔒 Anonymous</span>
-        Stored locally only — never sent to any server.
+        Not submitted anywhere — feedback is logged locally in your browser console only.
       </div>
       <button class="btn-submit" id="fbBtn" onclick="submitFb()">Send Feedback 💌</button>
     </div>
@@ -626,7 +625,7 @@ body{
     <div class="ty-msg" id="tyMsg">
       <div class="ty-ico">🙏</div>
       <div class="ty-title">Thank you so much.</div>
-      <div class="ty-sub">Your feedback means a lot. It'll make WebsitesBlocker better for everyone. — Kartik</div>
+      <div class="ty-sub">Your feedback means a lot. It'll make FocusAI better for everyone. — Kartik</div>
     </div>
   </div>
 
@@ -691,7 +690,7 @@ body{
       <div class="feat-ico c-pk">🤖</div>
       <div>
         <div class="feat-title">AI Productivity Advisor </div>
-        <div class="feat-desc">Connect your Mistral AI key to unlock a personal AI coach. It reads your real insights — time spent, blocked sites, focus sessions — and gives you hyper-personalised advice on what to block and how to focus better.</div>
+        <div class="feat-desc">Connect your own Mistral AI key to unlock a personal AI coach. It reads your local usage data — time spent, blocked sites, focus sessions — and sends it to Mistral's API to generate personalised advice. <strong style="color:#f59e50">Note:</strong> This is the only feature that requires an internet connection and sends data externally. Fully opt-in — does nothing until you enable it.</div>
       </div>
     </div>
 
@@ -720,8 +719,8 @@ body{
     <div class="feat">
       <div class="feat-ico c-gn">🔐</div>
       <div>
-        <div class="feat-title">100% Private & Offline</div>
-        <div class="feat-desc">No servers. No accounts. No analytics. Everything lived on your device. Always.</div>
+        <div class="feat-title">Privacy-First by Default</div>
+        <div class="feat-desc">No servers, no accounts, no analytics — for all core features. Everything stays on your device. The only exception is the optional AI Advisor, which sends your usage data to Mistral's API only when you explicitly enable it and request advice.</div>
       </div>
     </div>
 
@@ -745,7 +744,7 @@ body{
           Zero Tracking
           <span class="feat-badge badge-v">Verified</span>
         </div>
-        <div class="feat-desc">No telemetry. No usage data. No fingerprinting. Not even anonymous analytics. What you block stays between you and your browser.</div>
+        <div class="feat-desc">No telemetry, no fingerprinting, no anonymous analytics — ever. Your block lists and habits are never automatically shared. The only time any usage data leaves your device is if you opt into the AI Advisor feature (Mistral API), which is fully off by default.</div>
       </div>
     </div>
 
@@ -848,7 +847,7 @@ You can't control your Time but manage it to become productive </div>
       <span class="f-pill hi">Free Forever</span>
       <span class="f-pill hi">Zero Tracking</span>
       <span class="f-pill hi">Privacy-First</span>
-      <span class="f-pill hi">100% Offline</span>
+      <span class="f-pill hi">Offline by Default</span>
       <span class="f-pill hi">No Data Collection</span>
     </div>
 
@@ -883,7 +882,7 @@ function submitFb(){
   btn.disabled = true;
   btn.textContent = "Sending…";
 
-  console.log("[WebsitesBlocker Goodbye]", { reasons: selected, note: note });
+  console.log("[FocusAI Goodbye]", { reasons: selected, note: note });
 
   setTimeout(function(){
     document.getElementById("reasons").style.display = "none";
